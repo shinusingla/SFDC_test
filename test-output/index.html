@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.email.scripts.PasswordReset" hash-for-method="testPasswordReset">testPasswordReset</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.email.scripts.EmailResetScript" hash-for-method="testPasswordReset">testPasswordReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -119,7 +119,7 @@
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.email.scripts.PasswordReset</span>
+              <span class="class-name">com.email.scripts.EmailResetScript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -127,36 +127,45 @@
                   <a name="testPasswordReset">
                   </a> <!-- testPasswordReset -->
                   <span class="method-name">testPasswordReset</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 297 milliseconds
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
 System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3a44bdc2-1293-4bc1-a0c6-d8bb580f0de1
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
 	at com.email.pom.iREPLoginPage.login(iREPLoginPage.java:29)
-	at com.email.scripts.PasswordReset.testPasswordReset(PasswordReset.java:28)
-	at com.email.scripts.PwdReset.main(PwdReset.java:14)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11706:23)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8437:5)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8584:219)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8531:36)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11489:5)
-	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935:41)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261:15)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168:5)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616:5)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464:9)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/Udanka/AppData/Local/Temp/anonymous7474133451442547962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333:9)
-... Removed 25 stack frames
+	at com.email.scripts.EmailResetScript.testPasswordReset(EmailResetScript.java:28)
+	at com.email.scripts.EmailReset.main(EmailReset.java:14)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 39 more
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,7 +182,7 @@ Driver info: driver.version: unknown
 &lt;suite name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.email.scripts.PasswordReset&quot;/&gt;
+      &lt;class name=&quot;com.email.scripts.EmailResetScript&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -216,13 +225,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPasswordReset')
-data.setCell(0, 2, 'com.email.scripts.PasswordReset')
-data.setCell(0, 3, 1469);
+data.setCell(0, 2, 'com.email.scripts.EmailResetScript')
+data.setCell(0, 3, 50063);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -248,7 +257,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.email.scripts.PasswordReset</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.email.scripts.EmailResetScript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition</span>
                 <span class="method-start">0 ms</span>
@@ -257,8 +266,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testPasswordReset</span>
-                <span class="method-start">14655 ms</span>
+                <span class="method-start">14231 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postCondition</span>
+                <span class="method-start">64294 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

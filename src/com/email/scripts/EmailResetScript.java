@@ -6,7 +6,7 @@ import com.email.pom.iREPEmailReset_User;
 import com.email.pom.iREPLoginPage;
 import com.lib.ExcelLib;
 
-public class PasswordReset extends iREPSuperTestNG 
+public class EmailResetScript extends iREPSuperTestNG 
 {
 	@Test
 	public void testPasswordReset() throws Exception 

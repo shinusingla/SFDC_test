@@ -44,5 +44,6 @@ public class iREPEmailReset_User {
 		Thread.sleep(6000);
 		userNavLabel.click();
 		Logout.click();
+		Thread.sleep(8000);
 	}
 }

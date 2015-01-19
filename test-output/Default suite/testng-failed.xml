@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.email.scripts.PasswordReset">
+      <class name="com.email.scripts.EmailResetScript">
         <methods>
-          <include name="preCondition"/>
           <include name="testPasswordReset"/>
+          <include name="preCondition"/>
         </methods>
-      </class> <!-- com.email.scripts.PasswordReset -->
+      </class> <!-- com.email.scripts.EmailResetScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

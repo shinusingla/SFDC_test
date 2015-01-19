@@ -18,9 +18,9 @@ public class iREPSuperTestNG
 		driver=new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
-	@AfterMethod
-	public void postCondition()
-	{
-	   driver.quit();	
-	}
+//	@AfterMethod
+//	public void postCondition()
+//	{
+//	   driver.quit();	
+//	}
 }

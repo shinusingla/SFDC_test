@@ -31,6 +31,7 @@ public class iREPLoginPage
 		unTextBox.sendKeys(un);
 		pwTextBox.sendKeys(pw);
 		loginButton.click();
+		Thread.sleep(8000);
 	}
 	
 }

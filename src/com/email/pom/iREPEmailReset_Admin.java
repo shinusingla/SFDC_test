@@ -1,11 +1,16 @@
 package com.email.pom;
 
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+/*  Owner			:		Udanka HS 
+ * 	Email ID		:		udanka.hs@cognizant.com
+ * 	Associate ID	:		266241
+ * 	Organization	: 		Cognizant Technology Solutions	
+*/
 
 public class iREPEmailReset_Admin {
 
@@ -80,6 +85,7 @@ public class iREPEmailReset_Admin {
 				"salesforce.com - Activation Required")) {
 			try {
 					EmailMeButton.click();
+					Thread.sleep(40000);
 			}
 			catch (Exception e)
 			{

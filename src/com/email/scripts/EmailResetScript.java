@@ -17,7 +17,7 @@ public class EmailResetScript extends iREPSuperTestNG {
 		iREPLoginPage loginPage = new iREPLoginPage(driver);
 		iREPEmailReset_Admin passwordReset = new iREPEmailReset_Admin(driver);
 
-		String xlPath = "D:/Selenium/test data/Test Data_AutoDesk.xls";
+		String xlPath = "D:/SPURP/Test Data/Test Data_AutoDesk.xls";
 		String sheetName = "Email Reset through User";
 
 		String iREPUname = ExcelLib.getCellValue(xlPath, sheetName, 1, 0);

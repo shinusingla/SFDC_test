@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 16 22:38:11 IST 2015</td>
+<td>Started on:</td><td>Thu Jan 22 15:15:09 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66448 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136363 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,119 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.email.scripts.EmailResetScript.postCondition()'><b>postCondition</b><br>Test class: com.email.scripts.EmailResetScript</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-	at com.email.scripts.iREPSuperTestNG.postCondition(iREPSuperTestNG.java:24)
-	at com.email.scripts.EmailReset.main(EmailReset.java:14)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 41 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957099969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1957099969'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-	at com.email.scripts.iREPSuperTestNG.postCondition(iREPSuperTestNG.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at com.email.scripts.EmailReset.main(EmailReset.java:14)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>com.email.scripts.EmailResetScript@2aae9190</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -189,53 +76,59 @@ Caused by: java.net.ConnectException: Connection refused: connect
 </tr>
 <tr>
 <td title='com.email.scripts.EmailResetScript.testPasswordReset()'><b>testPasswordReset</b><br>Test class: com.email.scripts.EmailResetScript</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phSearchInput&quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.email.pom.iREPLoginPage.login(iREPLoginPage.java:29)
-	at com.email.scripts.EmailResetScript.testPasswordReset(EmailResetScript.java:28)
-	at com.email.scripts.EmailReset.main(EmailReset.java:14)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 25 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 39 more
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace137275020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace137275020'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+System info: host: &apos;PC169030&apos;, ip: &apos;10.236.226.44&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 38246424-e638-44ee-90bd-77fc2521ee8f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy4.click(Unknown Source)
+	at com.email.pom.iREPEmailReset_Admin.reset(iREPEmailReset_Admin.java:94)
+	at com.email.scripts.EmailResetScript.testPasswordReset(EmailResetScript.java:36)
+	at com.email.scripts.EmailReset.main(EmailReset.java:20)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phSearchInput&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;Udanka&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.email.pom.iREPLoginPage.login(iREPLoginPage.java:29)
-	at com.email.scripts.EmailResetScript.testPasswordReset(EmailResetScript.java:28)
+System info: host: &apos;PC169030&apos;, ip: &apos;10.236.226.44&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/266241/AppData/Local/Temp/anonymous5288042706676938870webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/266241/AppData/Local/Temp/anonymous5288042706676938870webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31750195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31750195'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phSearchInput&quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC169030&apos;, ip: &apos;10.236.226.44&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 38246424-e638-44ee-90bd-77fc2521ee8f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy4.click(Unknown Source)
+	at com.email.pom.iREPEmailReset_Admin.reset(iREPEmailReset_Admin.java:94)
+	at com.email.scripts.EmailResetScript.testPasswordReset(EmailResetScript.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -257,39 +150,17 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at com.email.scripts.EmailReset.main(EmailReset.java:14)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 25 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 39 more
+	at com.email.scripts.EmailReset.main(EmailReset.java:20)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phSearchInput&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC169030&apos;, ip: &apos;10.236.226.44&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/266241/AppData/Local/Temp/anonymous5288042706676938870webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/266241/AppData/Local/Temp/anonymous5288042706676938870webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
 </pre></div></td>
-<td>50</td>
-<td>com.email.scripts.EmailResetScript@2aae9190</td></tr>
+<td>69</td>
+<td>com.email.scripts.EmailResetScript@7f7052</td></tr>
 </table><p>
 </body>
 </html>

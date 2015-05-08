@@ -5,7 +5,6 @@
     <classes>
       <class name="com.email.scripts.EmailResetScript">
         <methods>
-          <include name="postCondition"/>
           <include name="testPasswordReset"/>
           <include name="preCondition"/>
         </methods>

@@ -12,20 +12,23 @@ import org.openqa.selenium.support.PageFactory;
  * 	Organization	: 		Cognizant Technology Solutions	
 */
 
-public class iREPEmailReset_Admin {
+public class FieldAccessibility {
 
 	private WebDriver driver;
 
 	boolean status;
 
-	@FindBy(id = "userNavButton")
-	private WebElement userNavLabel;
+	@FindBy(id = "setupLink")
+	private WebElement SetupLink;
 
-	@FindBy(id = "phSearchInput")
-	private WebElement SearchBox;
+	@FindBy(id = "Security_font")
+	private WebElement SecurityControl;
 
-	@FindBy(id = "phSearchButton")
-	private WebElement SearchButton;
+	@FindBy(id = "FieldAccessibility_font")
+	private WebElement FieldAccessibility;
+	
+	@FindBy(id = "zSelect")
+	private WebElement RecordType;
 
 	@FindBy(xpath = "//div[@id='User']//div[@class='displayName']//a")
 	private WebElement User;
@@ -51,12 +54,12 @@ public class iREPEmailReset_Admin {
 	@FindBy(xpath = "//a[contains(text(), 'Logout')]")
 	private WebElement Logout;
 
-	public iREPEmailReset_Admin(WebDriver driver) {
+	public FieldAccessibility(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 
-	public boolean reset(String UserName, String email)	throws InterruptedException {
+	public boolean reset(String recordType, String ChooseView, )	throws InterruptedException {
 		if (driver.getTitle().contains("salesforce.com - Enterprise Edition")) {
 			SearchBox.click();
 			SearchBox.sendKeys(UserName);

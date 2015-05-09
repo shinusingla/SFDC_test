@@ -47,17 +47,30 @@ public class ExcelLib
 		}
 	}
 	
+//	public static void writeExcel(String output_Path,String sheetName, int roww, int coll, String Valuee)throws Exception
+//	{	
+//		FileInputStream fis = new FileInputStream(output_Path);
+//		Workbook wb = WorkbookFactory.create(fis);
+//		FileOutputStream file1 = new FileOutputStream(output_Path);
+//		Sheet s1 = wb.getSheet(sheetName);
+//		org.apache.poi.ss.usermodel.Row rownum1 = s1.getRow(roww);
+//		rownum1.createCell(coll).setCellValue(Valuee);
+//		wb.write(file1);
+//		file1.close();
+//	}
+	
 	public static void writeExcel(String output_Path,String sheetName, int roww, int coll, String Valuee)throws Exception
 	{	
 		FileInputStream fis = new FileInputStream(output_Path);
 		Workbook wb = WorkbookFactory.create(fis);
-		FileOutputStream file1 = new FileOutputStream(output_Path);
+		FileOutputStream fos = new FileOutputStream(output_Path);
 		Sheet s1 = wb.getSheet(sheetName);
-		org.apache.poi.ss.usermodel.Row rownum1 = s1.getRow(roww);
+		org.apache.poi.ss.usermodel.Row rownum1 = s1.createRow(roww);
 		rownum1.createCell(coll).setCellValue(Valuee);
-		wb.write(file1);
-		file1.close();
+		wb.write(fos);
+		fos.close();
 	}
+	
 	public static int getColCount(String xlPath,String sheetName, int row)
 	{
 		try

@@ -1,10 +1,14 @@
 package com.email.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import com.lib.ExcelLib;
 
 /*  Owner			:		Udanka HS 
  * 	Email ID		:		udanka.hs@cognizant.com
@@ -30,86 +34,36 @@ public class FieldAccessibility {
 	@FindBy(id = "zSelect")
 	private WebElement RecordType;
 
-	@FindBy(xpath = "//div[@id='User']//div[@class='displayName']//a")
-	private WebElement User;
-
-	@FindBy(xpath = "//a[@class='contactInfoLaunch editLink']/img")
-	private WebElement Edit;
-
-	@FindBy(xpath = "//input[@id='email']")
-	private WebElement EmailBox;
-
-	@FindBy(xpath = "//input [@type='button' and @value='Save All']")
-	private WebElement Save;
-
-	@FindBy(id = "transportOptionstransportEmail")
-	private WebElement EmailRadio;
-
-	@FindBy(id = "save")
-	private WebElement Continue;
-
-	@FindBy(xpath = "//input[@value='Email me a verification code']")
-	private WebElement EmailMeButton;
-
-	@FindBy(xpath = "//a[contains(text(), 'Logout')]")
-	private WebElement Logout;
 
 	public FieldAccessibility(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 
-	public boolean reset(String recordType, String ChooseView, )	throws InterruptedException {
-		if (driver.getTitle().contains("salesforce.com - Enterprise Edition")) {
-			SearchBox.click();
-			SearchBox.sendKeys(UserName);
-			SearchButton.click();
-			Thread.sleep(8000);
-			User.click();
-			Edit.click();
-			driver.switchTo().frame("contactInfoContentId");
-			EmailBox.clear();
-			EmailBox.sendKeys(email);
-			Save.click();
-			
-			try
-			{
-				driver.switchTo().alert().accept();	
-			}
-			catch (NoAlertPresentException e)
-			{
-				e.printStackTrace();
-			}
-			Thread.sleep(6000);
-
-			status = true;
-
-		} else if (driver.getTitle().equals(
-				"salesforce.com - Activation Required")) {
-			try {
-					EmailMeButton.click();
-					Thread.sleep(40000);
-			}
-			catch (Exception e)
-			{
-			e.printStackTrace();	
-			}
-				SearchBox.click();
-				SearchBox.sendKeys(UserName);
-				SearchButton.click();
-				Thread.sleep(8000);
-				User.click();
-				Edit.click();
-				driver.switchTo().frame("contactInfoContentId");
-				EmailBox.clear();
-				EmailBox.sendKeys(email);
-				Save.click();
-				Thread.sleep(6000);
+	public int FieldList (String RecrdType, String ObjectType, String ChooseView, String OutputSheetName, String OutputxlPath) throws Exception
+	{
+		driver.findElement(By.id("setupLink")).click();
+		driver.findElement(By.id("Security_font")).click();
+		driver.findElement(By.id("FieldAccessibility_font")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.linkText(ObjectType)).click();
+		driver.findElement(By.linkText(ChooseView)).click();
+		new Select (driver.findElement(By.id("zSelect"))).selectByVisibleText(RecrdType);
+		Thread.sleep(5000);
+		
+		int RC = driver.findElements(By.xpath("//div[3]//table//tr")).size();
+		
+		System.out.println("Row Count is "+RC);
+		
+		for (int i = 6; i <= RC-1 ; i++)
+		{
+			int k = i-5;
+			System.out.println("K is "+k);
+			String field= driver.findElement(By.xpath("//div[3]//table//tr["+i+"]/th")).getText();
+			ExcelLib.writeExcel(OutputxlPath, OutputSheetName, k, 0, field);
+			System.out.println(field);
 		}
-		else {
-			status= false;
-		}
-		Thread.sleep(6000);
-		return status;
+		int NumberOfFileds = RC-6;
+		return NumberOfFileds;
 	}
 }

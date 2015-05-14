@@ -17,8 +17,8 @@ public class TestFieldAccessibility extends iREPSuperTestNG {
 		iREPLoginPage loginPage = new iREPLoginPage(driver);
 		FieldAccessibility FieldAcce = new FieldAccessibility(driver);
 
-		String xlPath = "D:/Selenium/Field Accessibility/Field Accessibility.xls";
-		String OutputxlPath = "D:/Selenium/Field Accessibility/Field Accessibility_Output.xls";
+		String xlPath = "src/Field Accessibility.xls";
+		String OutputxlPath = "src/Field Accessibility_Output.xls";
 		String InputSheetName = "Input";
 		String OutputSheetName = "Output";
 		
@@ -39,8 +39,8 @@ public class TestFieldAccessibility extends iREPSuperTestNG {
 			
 			String NumbrOfFieldsString = Integer.toString(NumbrOfFields);
 			
-			ExcelLib.writeExcel(OutputxlPath, InputSheetName, j, 5, NumbrOfFieldsString);
+			ExcelLib.writeExcel(OutputxlPath, OutputSheetName, 0, 1, NumbrOfFieldsString);
 		}
-//		driver.quit();
+		driver.quit();
 	}
 }
